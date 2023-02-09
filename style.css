@@ -1,172 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    position: relative;
-    background: rgb(52, 82, 88);
-    background: linear-gradient(114deg, rgba(52, 82, 88, 1) 38%, rgba(107, 207, 227, 1) 100%);
-    overflow: hidden;
+  font-family: "Teko", sans-serif;
+  background: #e7cfa3;
+  color: rgb(255, 255, 255);
+}
+h1 {
+  font-size: 5rem;
+}
+header {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2rem;
+  background: #cea315a6;
 }
 
-.wrap {
-    padding: 25px 50px;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
-
 a {
-    text-decoration: none;
-    color: rgb(223, 243, 239);
-    transition: ease-in-out 0.5s;
-
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
 }
-
-a:hover {
-    text-shadow: -1px 0 white;
-    font-size: 1.5rem;
-}
-
-nav {
-
-    width: 100%;
-    height: 4rem;
-    background: rgb(66, 106, 114);
-}
-
-nav>ul {
-    height: 100%;
-    font-weight: bold;
-    font-size: 2rem;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-}
-
-
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(69, 111, 119);
-    color: white;
-
+  display: flex;
+  justify-content: center;
 }
-
-.title {
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
-    font-size: 4rem;
-    color: rgb(223, 243, 239);
-    margin-bottom: 1rem;
-
-}
-
-.right {
-    padding-right: 25px;
-}
-
-
-.row:nth-child(1) {
-    text-align: center;
-
-}
-
 img {
-    height: auto;
-    max-width: 100%;
+  width: 100%;
+  max-width: 800px;
 }
 
 .col {
-    padding-top: 20px;
-    width: 50%;
+  padding: 30px 20px 0 20px;
+  width: 50%;
+  text-align: center;
 }
-
-footer {
-
-    padding: 25px;
-    background: rgb(66, 106, 114);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: rgb(223, 243, 239);
-
+h3 {
+  font-size: 3rem;
 }
-
-.ico {
-    width: 25px;
-    height: 25px;
-}
-
-.call {
-    text-align: end;
-}
-
-.address {
-    display: flex;
-}
-
-.mainText {
-    font-size: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 .social {
-    position: absolute;
-    top: 35%;
-    left: 10px;
+  position: absolute;
+  bottom: 50%;
+  background-color: #1480568e;
+  border-radius: 10px;
+}
+
+.left {
+  margin: auto;
+  font-size: 2rem;
+}
+i {
+  color: white;
+  margin: 10px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15%;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+p {
+  font-size: 2rem;
+}
+
+/* Media q */
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    height: 450px;
+    padding: 0;
+    width: 100%;
+  }
+  footer {
+    gap: 25px;
+    margin-top: 25px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 5px;
-    border-radius: 10px;
-    background: rgb(123, 171, 180);
-    opacity: 0.4;
+  }
+  nav {
+    display: none;
+  }
+  .wrap {
+    margin: 0;
+  }
 }
-
-
-.socialLogo {
-
-    width: 25px;
-    height: 25px;
-}
-
-@media screen and (max-width: 900px) {
-    .row {
-        flex-direction: column;
-    }
-
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .call,
-    .address {
-        padding: 20px;
-    }
-
-    .address {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .wrap {
-        padding: 0;
-    }
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }
